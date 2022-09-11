@@ -14,14 +14,16 @@ namespace GD
     {
         private static string projectName = "GD";
 
+        [SerializeField]
         public static List<string> folders = new List<string>() { "Scenes", "Scripts", "Data", "Animation", "Audio", "Materials", "Meshes", "Prefabs", "Textures", "Sprites" };
 
         [MenuItem("Tools/GD/Utils/Create project folders...")]
         private static void ShowProjectPopup()
         {
-            CreateFolders window = CreateInstance<CreateFolders>();
-            window.position = new Rect(Screen.width / 2, Screen.height / 2, 400, 150);
-            window.ShowPopup();
+            var window = GetWindow(typeof(CreateFolders));
+            var title = new GUIContent();
+            title.text = "Create Project Folders";
+            window.titleContent = title;
         }
 
         private static void CreateAllFolders()
@@ -57,18 +59,12 @@ namespace GD
 
         private void OnGUI()
         {
-            EditorGUILayout.LabelField("Enter the project name used as the root folder:");
             projectName = EditorGUILayout.TextField("Project Name: ", projectName);
             Repaint();
             GUILayout.Space(10);
             if (GUILayout.Button("Create Folders"))
             {
                 CreateAllFolders();
-                Close();
-            }
-
-            if (GUILayout.Button("Cancel"))
-            {
                 Close();
             }
         }
