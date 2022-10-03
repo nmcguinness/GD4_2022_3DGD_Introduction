@@ -10,8 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9076ab6fc12677346aaed9bac112ec26, type: 3}
-  m_Name: GameLevel
+  m_Name: GameLevel - House of Demtrescu
   m_EditorClassIdentifier: 
-  description: 
-  objectives: []
-  gameSceneList: []
+  description: House of Demetrescu
+  objectives:
+  - Find the key
+  - Unlock the safe
+  gameSceneList:
+  - {fileID: 11400000, guid: 631a7c927293bf54d9a7c47e27c3eee2, type: 2}
+  - {fileID: 11400000, guid: 631a7c927293bf54d9a7c47e27c3eee2, type: 2}
+  - {fileID: 11400000, guid: 631a7c927293bf54d9a7c47e27c3eee2, type: 2}

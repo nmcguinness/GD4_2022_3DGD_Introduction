@@ -10,17 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 27d9be7ad1597d14e9eb4a7382b197b1, type: 3}
-  m_Name: GameLayout
+  m_Name: Resident Evil 6 - Bob's Return
   m_EditorClassIdentifier: 
-  levels: []
+  levels:
+  - {fileID: 11400000, guid: 1ed2562ca2814ea49bbdbfee4ffd90b7, type: 2}
+  - {fileID: 11400000, guid: 1ed2562ca2814ea49bbdbfee4ffd90b7, type: 2}
+  - {fileID: 11400000, guid: 1ed2562ca2814ea49bbdbfee4ffd90b7, type: 2}
   startLevel: 0
   mainMenu: {fileID: 0}
   pauseMenu: {fileID: 0}
   uiMenu: {fileID: 0}
-  lifecycleStage: 0
-  version: 0
-  lastModifiedDate: 
-  teamLead: 
-  teamMembers: []
-  documentationURL: 
+  lifecycleStage: 5
+  version: 1.2
+  lastModifiedDate: 4/10/22
+  teamLead: Maeve
+  teamMembers:
+  - 
+  - 
+  documentationURL: mahara.dkit.ie
   currentLevel: 0
