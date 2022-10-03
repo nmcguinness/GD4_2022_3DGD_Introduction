@@ -41,6 +41,21 @@ namespace GD
     {
         public BoolVariable Variable;
         public bool Value => UseConstant ? ConstantValue : Variable.Value;
+
+        //public int Age
+        //{
+        //    get
+        //    {
+        //        return this.age;
+        //    }
+        //}
+    }
+
+    [System.Serializable]
+    public class FloatReference : BaseReference<float>
+    {
+        public FloatVariable Variable;
+        public float Value => UseConstant ? ConstantValue : Variable.Value;
     }
 
     #endregion Reference Types

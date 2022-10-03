@@ -111,6 +111,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5fd873a05bcb094c9726d91af05701e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shouldRotate:
+    UseConstant: 0
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 76da949771b1eb54aa2f7fc4112d5394, type: 2}
   rotationParameters: {fileID: 11400000, guid: c6233dcbcb15f9147946e8894a137a32, type: 2}
 --- !u!114 &7360215191966169796
 MonoBehaviour:

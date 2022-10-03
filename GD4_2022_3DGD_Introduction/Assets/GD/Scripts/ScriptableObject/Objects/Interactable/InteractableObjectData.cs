@@ -2,7 +2,7 @@
 
 namespace GD
 {
-    [CreateAssetMenu(fileName = "InteractableObjectData", menuName = "Scriptable Objects/Game/Objects/Interactable")]
+    [CreateAssetMenu(fileName = "InteractableObjectData", menuName = "GD/Scriptable Objects/Game/Objects/Interactable")]
     public class InteractableObjectData : BaseObjectData
     {
         [Header("UI Icon")]

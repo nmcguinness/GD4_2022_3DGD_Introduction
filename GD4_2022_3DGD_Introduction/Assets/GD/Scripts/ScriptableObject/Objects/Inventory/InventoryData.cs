@@ -7,7 +7,7 @@ namespace GD
     /// Maintains a list of the  items held by the player. An InventoryItem is a simple class
     /// gathering together the BaseObjectData, Amount, and Capacity that can be stored for that ConsumableObjectData.
     /// </summary>
-    [CreateAssetMenu(fileName = "InventoryData", menuName = "Scriptable Objects/Game/Objects/Inventory")]
+    [CreateAssetMenu(fileName = "InventoryData", menuName = "GD/Scriptable Objects/Game/Objects/Inventory")]
     public class InventoryData : ScriptableGameObject
     {
         [SerializeField]

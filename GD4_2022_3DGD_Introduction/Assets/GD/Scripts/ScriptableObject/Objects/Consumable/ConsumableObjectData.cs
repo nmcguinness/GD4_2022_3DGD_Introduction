@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace GD
 {
-    [CreateAssetMenu(fileName = "ConsumableObjectData", menuName = "Scriptable Objects/Game/Objects/Consumable")]
+    [CreateAssetMenu(fileName = "ConsumableObjectData", menuName = "GD/Scriptable Objects/Game/Objects/Consumable")]
     public class ConsumableObjectData : InteractableObjectData
     {
         [Header("Buff Attributes")]

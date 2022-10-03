@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27d9be7ad1597d14e9eb4a7382b197b1, type: 3}
+  m_Name: GameLayout
+  m_EditorClassIdentifier: 
+  levels: []
+  startLevel: 0
+  mainMenu: {fileID: 0}
+  pauseMenu: {fileID: 0}
+  uiMenu: {fileID: 0}
+  lifecycleStage: 0
+  version: 0
+  lastModifiedDate: 
+  teamLead: 
+  teamMembers: []
+  documentationURL: 
+  currentLevel: 0

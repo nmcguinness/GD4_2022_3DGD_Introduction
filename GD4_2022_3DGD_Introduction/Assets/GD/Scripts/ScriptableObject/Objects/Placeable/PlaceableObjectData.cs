@@ -2,7 +2,7 @@
 
 namespace GD
 {
-    [CreateAssetMenu(fileName = "PlaceableObjectData", menuName = "Scriptable Objects/Game/Objects/Placeable")]
+    [CreateAssetMenu(fileName = "PlaceableObjectData", menuName = "GD/Scriptable Objects/Game/Objects/Placeable")]
     public class PlaceableObjectData : BaseObjectData
     {
         //add game event here - OnDestroy, OnSpawn

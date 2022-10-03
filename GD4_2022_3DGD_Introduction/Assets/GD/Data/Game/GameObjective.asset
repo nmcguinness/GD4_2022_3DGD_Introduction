@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc5636a9607183142a682d7f86853180, type: 3}
+  m_Name: GameObjective
+  m_EditorClassIdentifier: 
+  IsCompleted: 0
+  Icon: {fileID: 0}
+  Description: 
+  Priority: 0
+  Keyword: 
+  Position: {x: 0, y: 0, z: 0}
+  Visibility: 0
+  ShownWithinDistance: 0
+  IsTimeLimited: 0
+  timeLimitSecs: 0
+  timeLimitAudioClip: {fileID: 0}
+  playTimeLimitAudioBeforeSecs: 0
+  AchievementText: 
+  AchievementAudioClip: {fileID: 0}

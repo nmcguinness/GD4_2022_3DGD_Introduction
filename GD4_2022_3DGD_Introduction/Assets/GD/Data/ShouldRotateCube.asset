@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7e97bc5585727f44b27ee38ac534c17, type: 3}
-  m_Name: cubeRotationParameters
+  m_Script: {fileID: 11500000, guid: b203cba963d09e440ab7393c47c72301, type: 3}
+  m_Name: ShouldRotateCube
   m_EditorClassIdentifier: 
-  axis: {x: 10, y: 1, z: 0}
-  angleInDegrees: 6.5
+  Description: Controls rotation of cubes
+  Value: 1
