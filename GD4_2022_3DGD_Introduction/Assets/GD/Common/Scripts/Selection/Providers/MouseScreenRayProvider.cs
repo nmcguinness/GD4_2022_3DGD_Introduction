@@ -20,7 +20,8 @@ namespace GD.Selection
 
         public Ray CreateRay()
         {
-            return currentCamera.ScreenPointToRay(Input.mousePosition, monoOrStereoscopicEye); //Stereoscopic?
+            return currentCamera.ScreenPointToRay(Input.mousePosition,
+                monoOrStereoscopicEye); //Stereoscopic?
         }
     }
 }

@@ -28,6 +28,7 @@ namespace GD.Selection
             if (Physics.Raycast(ray, out hitInfo))
             {
                 var currentSelection = hitInfo.transform;
+
                 if (currentSelection.CompareTag(selectableTag))
                 {
                     selection = currentSelection;

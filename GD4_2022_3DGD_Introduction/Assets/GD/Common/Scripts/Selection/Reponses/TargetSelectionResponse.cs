@@ -21,7 +21,8 @@ namespace GD.Selection
 
         public void Awake()
         {
-            currentTargetInstance = Instantiate(targetSelectionPrefab, Vector3.zero, Quaternion.Euler(0, 0, 0));
+            currentTargetInstance = Instantiate(targetSelectionPrefab,
+                Vector3.zero, Quaternion.Euler(0, 0, 0));
             currentTargetInstance.SetActive(false);
         }
 
@@ -30,11 +31,15 @@ namespace GD.Selection
             if (currentTargetInstance != null)
             {
                 RaycastHit hitInfo;
-                if (Physics.Raycast(selection.position, -selection.up, out hitInfo, rayCastDepth, targetGroundLayerMask))
+                if (Physics.Raycast(selection.position, -selection.up,
+                    out hitInfo, rayCastDepth, targetGroundLayerMask))
                 {
-                    currentTargetInstance.transform.position = selection.position - new Vector3(0, hitInfo.distance - targetOffset, 0);
-                    float mag = selection.GetComponent<Collider>().bounds.size.magnitude / scaleFactor;
-                    currentTargetInstance.transform.localScale = new Vector3(mag, mag, mag);
+                    currentTargetInstance.transform.position
+                        = selection.position - new Vector3(0, hitInfo.distance - targetOffset, 0);
+                    float mag
+                        = selection.GetComponent<Collider>().bounds.size.magnitude / scaleFactor;
+                    currentTargetInstance.transform.localScale
+                        = new Vector3(mag, mag, mag);
                     currentTargetInstance.SetActive(true);
                 }
             }

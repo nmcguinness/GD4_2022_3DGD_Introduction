@@ -20,7 +20,8 @@ namespace GD.Examples
         private void Awake()
         {
             //notice that we have to cast using "as" otherwise it will just be a reference to a Singleton<MonoBehaviour>
-            TimeTickSystem.Instance.RegisterListener(tickRateMultiplierType, HandleTick);
+            TimeTickSystem.Instance.RegisterListener(tickRateMultiplierType,
+                HandleTick);
 
             //store material and original color
             material = GetComponent<MeshRenderer>().material;
@@ -30,7 +31,8 @@ namespace GD.Examples
         private void OnDestroy()
         {
             //don't forget to un-register!
-            TimeTickSystem.Instance.UnregisterListener(tickRateMultiplierType, HandleTick);
+            TimeTickSystem.Instance.UnregisterListener(tickRateMultiplierType,
+                HandleTick);
         }
 
         public void HandleTick()

@@ -24,7 +24,7 @@ namespace GD.Selection
         {
             var renderer = selection.GetComponent<Renderer>();
 
-            //we can use c# 7.0 syntax -"https://www.thomasclaudiushuber.com/2020/03/12/c-different-ways-to-check-for-null/"/>
+            //we can use c# 7.0 syntax -https://www.thomasclaudiushuber.com/2020/03/12/c-different-ways-to-check-for-null/"/>
             if (renderer != null && currentOriginalMaterial != null)
                 renderer.material = currentOriginalMaterial;
         }

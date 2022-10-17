@@ -551,7 +551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b979d38bd8aec2343a46d34eff3f53e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tickRateMultiplierType: 2
+  tickRateMultiplierType: 4
   alternateColor: {r: 0.9505143, g: 0, b: 1, a: 0}
 --- !u!136 &672745125
 CapsuleCollider:
