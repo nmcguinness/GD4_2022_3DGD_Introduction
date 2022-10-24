@@ -2,7 +2,7 @@
 
 namespace GD
 {
-    [CreateAssetMenu(fileName = "StringVariable", menuName = "Scriptable Objects/Variables/String")]
+    [CreateAssetMenu(fileName = "StringVariable", menuName = "GD/Scriptable Objects/Variables/String")]
     public class StringVariable : ScriptableDataType<string>
     {
         public void Set(string a)

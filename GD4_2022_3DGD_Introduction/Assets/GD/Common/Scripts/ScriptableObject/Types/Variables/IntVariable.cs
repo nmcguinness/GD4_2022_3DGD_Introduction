@@ -2,7 +2,7 @@
 
 namespace GD
 {
-    [CreateAssetMenu(fileName = "IntVariable", menuName = "Scriptable Objects/Variables/Int")]
+    [CreateAssetMenu(fileName = "IntVariable", menuName = "GD/Scriptable Objects/Variables/Int")]
     public class IntVariable : ScriptableDataType<int>
     {
         public void Add(int a)
