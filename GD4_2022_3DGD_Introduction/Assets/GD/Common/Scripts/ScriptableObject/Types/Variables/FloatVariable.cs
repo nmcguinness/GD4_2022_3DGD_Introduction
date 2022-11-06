@@ -1,5 +1,9 @@
 ﻿using UnityEngine;
 
+//TODO - Add event for notification
+//TODO - Add NumericVariable
+
+
 namespace GD
 {
     [CreateAssetMenu(fileName = "FloatVariable",
