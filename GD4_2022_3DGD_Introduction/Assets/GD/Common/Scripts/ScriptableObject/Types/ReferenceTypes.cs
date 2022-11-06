@@ -14,9 +14,19 @@ namespace GD
         [ContextMenuItem("Reset Value", "ResetValue")]
         public T Value;
 
+        public void Set(T value)
+        {
+            Value = value;
+        }
+
         public virtual void ResetValue()
         {
-            Value = default(T);
+            Set(default(T));
+        }
+
+        public bool Equals(T other)
+        {
+            return Value.Equals(other);
         }
     }
 

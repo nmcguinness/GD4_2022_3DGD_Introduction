@@ -5,14 +5,19 @@ namespace GD
     [CreateAssetMenu(fileName = "StringVariable", menuName = "GD/Scriptable Objects/Variables/String")]
     public class StringVariable : ScriptableDataType<string>
     {
-        public void Set(string a)
+        public void Add(StringVariable a)
         {
-            Value = a;
+            Value += a.Value;
         }
 
         public void Set(StringVariable a)
         {
-            Value = a.Value;
+            Set(a.Value);
+        }
+
+        public bool Equals(StringVariable other)
+        {
+            return Value.Equals(other.Value);
         }
 
         public bool IsNullOrEmpty()
@@ -23,16 +28,6 @@ namespace GD
         public void Clear()
         {
             Value = string.Empty;
-        }
-
-        public bool Equals(string other)
-        {
-            return Value.Equals(other);
-        }
-
-        public bool Equals(StringVariable other)
-        {
-            return Value.Equals(other.Value);
         }
     }
 }
