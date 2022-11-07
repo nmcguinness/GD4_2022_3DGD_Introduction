@@ -125,6 +125,29 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &121674906 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2303193837191076909, guid: a8108c503b298ea4eba1d40499e4608b,
+    type: 3}
+  m_PrefabInstance: {fileID: 4012872266630282324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &121674910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121674906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f2cc4d55d9d9b54e83fff171c1d36a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsFlickering: 1
+  minIntensity: 5
+  maxIntensity: 10
+  minTimeDelayInSecs: 1
+  maxTimeDelayInSecs: 5
 --- !u!1 &392085945
 GameObject:
   m_ObjectHideFlags: 0
@@ -7898,8 +7921,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7761976086436552511, guid: 59202cf06f6067e4895ad82d623ab235,
         type: 3}
+      propertyPath: m_Cookie
+      value: 
+      objectReference: {fileID: 2800000, guid: f23eefc0719d14347aeafd8f98485ff4, type: 3}
+    - target: {fileID: 7761976086436552511, guid: 59202cf06f6067e4895ad82d623ab235,
+        type: 3}
       propertyPath: m_Intensity
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7761976086436552511, guid: 59202cf06f6067e4895ad82d623ab235,
+        type: 3}
+      propertyPath: m_SpotAngle
+      value: 108.528465
+      objectReference: {fileID: 0}
+    - target: {fileID: 7761976086436552511, guid: 59202cf06f6067e4895ad82d623ab235,
+        type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 72.35272
+      objectReference: {fileID: 0}
+    - target: {fileID: 7761976086436552511, guid: 59202cf06f6067e4895ad82d623ab235,
+        type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59202cf06f6067e4895ad82d623ab235, type: 3}

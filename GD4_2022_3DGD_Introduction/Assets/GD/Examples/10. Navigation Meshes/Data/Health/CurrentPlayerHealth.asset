@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d71332fa8044b44d9f5206559d30f3b, type: 3}
   m_Name: CurrentPlayerHealth
   m_EditorClassIdentifier: 
-  Description: Current health for player
-  Value: 100
+  Description: Stores current players health
+  OnChanged: {fileID: 11400000, guid: d024bc65f60a6b040970de64b7a978b5, type: 2}
+  Value: 0

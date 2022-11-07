@@ -7,11 +7,13 @@ namespace GD
     {
         public void Add(IntVariable a)
         {
+            OnChanged.Raise();
             Value += a.Value;
         }
 
         public void Set(IntVariable a)
         {
+            // OnChanged.Raise();
             Set(a.Value);
         }
 

@@ -7,6 +7,25 @@ public class PlayerController : MonoBehaviour
     public IntVariable currentPlayerHealth;
     public GameObjectVariable currentTeamTarget;
 
+    public void HandlePlayerHealthChanged()
+    {
+        Debug.Log("HandlePlayerHealthChanged");
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        //is this a NPC?
+        //is this characters health < X?
+        currentTeamTarget.Value = other.gameObject;
+    }
+}
+
+/*
+public class PlayerController : MonoBehaviour
+{
+    public IntVariable currentPlayerHealth;
+    public GameObjectVariable currentTeamTarget;
+
     private void Start()
     {
         currentPlayerHealth.OnChanged.AddListener(HandlePlayerHealthChanged);
@@ -19,7 +38,7 @@ public class PlayerController : MonoBehaviour
 
     private void HandlePlayerHealthChanged(string s)
     {
-        Debug.Log(s);
+        Debug.Log($"HandlePlayerHealthChanged:{s}");
     }
 
     private void OnTriggerEnter(Collider other)
@@ -29,6 +48,7 @@ public class PlayerController : MonoBehaviour
         currentTeamTarget.Value = other.gameObject;
     }
 }
+*/
 
 /*
 public class PlayerController : MonoBehaviour, IHandleTicks
