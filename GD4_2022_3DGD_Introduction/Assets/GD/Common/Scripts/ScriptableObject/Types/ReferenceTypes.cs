@@ -11,6 +11,9 @@ namespace GD
     [System.Serializable]
     public abstract class ScriptableDataType<T> : ScriptableGameObject
     {
+        //event that is triggered when this object changes
+        public UnityEvent<string> OnChanged;  //list, boolean
+
         [Header("Value")]
         [ContextMenuItem("Reset Value", "ResetValue")]
         public T Value;
@@ -22,6 +25,7 @@ namespace GD
 
         public virtual void ResetValue()
         {
+            OnChanged.Invoke("This just reset!");
             Set(default(T));
         }
 
