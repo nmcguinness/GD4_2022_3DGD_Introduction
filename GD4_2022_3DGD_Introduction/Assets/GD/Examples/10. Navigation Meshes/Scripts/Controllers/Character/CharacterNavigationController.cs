@@ -85,7 +85,8 @@ namespace GD.Controllers
         /// </summary>
         private void Update()
         {
-            if (Vector3.Distance(navMeshAgent.destination, transform.position) <= navMeshAgent.stoppingDistance)
+            if (Vector3.Distance(navMeshAgent.destination, transform.position)
+                <= navMeshAgent.stoppingDistance)
             {
                 ClearWaypoint();
                 animator.SetBool("IsWalking", false);
