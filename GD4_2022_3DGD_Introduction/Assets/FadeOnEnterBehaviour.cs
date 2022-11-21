@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FadeOnEnterBehaviour : MonoBehaviour
@@ -12,8 +10,16 @@ public class FadeOnEnterBehaviour : MonoBehaviour
     [Tooltip("Specify the tag that triggers this fade")]
     private string activationTag;
 
+    private FadeOutBehaviour fadeOutBehaviour;
+
+    private void Start()
+    {
+        fadeOutBehaviour = fadeTarget.GetComponent<FadeOutBehaviour>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log($"{other.tag}");
+        if (other.tag == activationTag)
+            fadeOutBehaviour.FadeOut();
     }
 }
