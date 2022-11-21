@@ -513,7 +513,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 742621406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.4, y: 1.885, z: -9.924}
+  m_LocalPosition: {x: 1.4, y: 1.885, z: -10.21}
   m_LocalScale: {x: 0.556345, y: 0.75133896, z: 0.556345}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1029,7 +1029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 551640da05bda034192bd65684b404bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeTarget: {fileID: 2074750458}
+  fadeTarget: {fileID: 2074750459}
   activationTag: Player
 --- !u!65 &2037201507
 BoxCollider:
@@ -1062,5 +1062,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85aa2d972d7177a449eeac80680ba0e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetAlpha: 0.4
+  targetAlpha: 0.096
+  startAlpha: 1
   fadeTimeSecs: 2
+  fadeOutCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.7102026
+      value: 0.4450302
+      inSlope: 1.2712616
+      outSlope: 1.2712616
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  fadeInTweenType: 29
