@@ -13,10 +13,12 @@ public class TweenTranslationBehaviour : MonoBehaviour
 
     private void Start()
     {
-        //  LeanTween.moveLocalZ(gameObject, -5, 5);
-        LeanTween.move(gameObject, target, tweenTimeSecs);
+        //LeanTween.move(gameObject, target, tweenTimeSecs)
+
+        LeanTween.moveLocalZ(gameObject, -5, tweenTimeSecs)
+          .setEase(LeanTweenType.easeShake).setLoopCount(5);
 
         //scale?
-        //LeanTween.scale(gameObject, Vector3.one * 1.25f, 4);
+        LeanTween.scale(gameObject, Vector3.one * 1.25f, 4);
     }
 }
